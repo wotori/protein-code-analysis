@@ -15,6 +15,8 @@ def create_report(objects: ObjectBuilder, settings):
             report.write(f'Sequence: \n{object_n.amino_acid_sequence} \n')
             report.write(f'Процентное отношение символа N ко всем остальным \n{object_n.n_percent} \n')
             report.write(f'Количество повторений символа N: \n{object_n.n_number_of_repetitions} \n')
+            for i in range(3):
+                report.write('\n')
 
         for i in range(10):
             report.write('\n')
